@@ -1,0 +1,77 @@
+name: media_puisi
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  assets_audio_player: ^1.6.4+4
+  chewie: ^0.9.10
+  video_player: ^0.10.9+2
+  flutter_bloc: ^4.0.0
+  shared_preferences: ^0.5.7+2
+  url_launcher: ^5.4.10
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.7.5
+  
+flutter_icons:
+  android: true
+  image_path: "assets/icon/icon.png"
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+  - assets/images/
+  - assets/audio/musik_musikalisasi/puisi1.mp3
+  - assets/audio/musik_musikalisasi/puisi2.mp3
+  - assets/audio/musik_musikalisasi/puisi3.mp3
+  - assets/audio/musik_musikalisasi/puisi4.mp3
+  - assets/audio/musik_musikalisasi/puisi5.mp3
+  - assets/audio/audio_definisi/definisi_deklamasi.mp3
+  - assets/audio/audio_definisi/definisi_demonstrasi_puisi.mp3
+  - assets/audio/audio_definisi/definisi_puisi.mp3
+  - assets/audio/audio_definisi/musikalisasi_awal.mp3
+  - assets/audio/audio_definisi/musikalisasi_campuran.mp3
+  - assets/audio/audio_definisi/musikalisasi_puisi.mp3
+  - assets/audio/audio_definisi/musikalisasi_terapan.mp3
+  - assets/video/contoh_deklamasi_1.mp4
+  - assets/video/contoh_deklamasi_2.mp4
+  - assets/video/contoh_musikalisasi_awal.mp4
+  - assets/video/contoh_musikalisasi_campuran.mp4
+  - assets/video/contoh_musikalisasi_terapan.mp4
+  - assets/video/ekspresi.mp4
+  - assets/video/konsentrasi.mp4
+  - assets/video/langkah_musikalisasi_awal.mp4
+  - assets/video/langkah_musikalisasi_campuran.mp4
+  - assets/video/langkah_musikalisasi_terapan.mp4
+  - assets/video/olahnapas.mp4
+  - assets/video/olahvokal.mp4
+  - assets/video/pemanasan.mp4
+  - assets/video/penghayatan.mp4
+  - assets/video/penjedaan.mp4
+  # example:
+  fonts:
+  - family: Raleway
+    fonts:
+      - asset: assets/fonts/Raleway-Regular.ttf
+      - asset: assets/fonts/Raleway-Medium.ttf
+      - asset: assets/fonts/Raleway-SemiBold.ttf
+      - asset: assets/fonts/Raleway-Bold.ttf
+
+  - family: OpenSans
+    fonts:
+      - asset: assets/fonts/OpenSans-Regular.ttf
+      - asset: assets/fonts/OpenSans-Bold.ttf
+
