@@ -44,7 +44,7 @@ class TipsDeklamasiMusikalisasi extends StatelessWidget {
               height: 10,
             ),
             Text(
-              "Tips Mendeklamasikan dan Memusikalisasi Puisi",
+              "Tips Mendeklamasikan dan Memusikalisasikan Puisi",
               style: headingContent,
             ),
             SizedBox(

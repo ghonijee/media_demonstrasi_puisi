@@ -42,7 +42,7 @@ class ContohPuisi316 extends StatelessWidget {
             MakePuisi(0, "Ke manakah jalan"),
             MakePuisi(20, "Mencari lindungan"),
             MakePuisi(40, "Ketika tubuh kuyup"),
-            MakePuisi(60, "Dan pintu tertututp"),
+            MakePuisi(60, "Dan pintu tertutup"),
             SizedBox(
               height: 20.0,
             ),
@@ -54,7 +54,7 @@ class ContohPuisi316 extends StatelessWidget {
               height: 20.0,
             ),
             MakePuisi(0, "Ke manakah pergi"),
-            MakePuisi(20, "Selain mencuit diri"),
+            MakePuisi(20, "Selain mencuci diri"),
             Divider(
               height: 30,
             ),

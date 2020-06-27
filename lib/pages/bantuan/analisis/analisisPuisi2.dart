@@ -201,7 +201,7 @@ class MaknaPuisi extends StatelessWidget {
           height: 20,
         ),
         Text(
-          "Ibu yang sangat tegar dan sabar \nMenerimanya kematian anaknya dengan penuh keikhlasan.",
+          "Ibu yang sangat tegar dan sabar \nMenerima kematian anaknya dengan penuh keikhlasan.",
           style: bodyContent,
         ),
       ],

@@ -104,7 +104,7 @@ class _MusikalisasiTerapanState extends State<MusikalisasiTerapan> {
               height: 5,
             ),
             Text(
-              "yaitu musikalisasi puisi yang ditampilkan dengan menjadikan syair-syair puisi sebagai lirik lagu atau disebut dengan pelaguan syair-syair puisi.",
+              "Yaitu musikalisasi puisi yang ditampilkan dengan menjadikan syair-syair puisi sebagai lirik lagu atau disebut dengan pelaguan syair-syair puisi.",
               style: bodyContent,
             ),
           ],

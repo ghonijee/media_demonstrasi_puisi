@@ -70,7 +70,7 @@ class _OlahVokalState extends State<OlahVokal> {
               height: 5,
             ),
             Text(
-              "Olah Vokal dilakukan untuk melatih intonasi, volume, dan keras lembutnya suara, serta ketepatan penggunaan suara sesuai tempat.",
+              "Olah vokal dilakukan untuk melatih intonasi, volume, dan keras lembutnya suara, serta ketepatan penggunaan suara sesuai tempat.",
               style: bodyContent,
             ),
             SizedBox(

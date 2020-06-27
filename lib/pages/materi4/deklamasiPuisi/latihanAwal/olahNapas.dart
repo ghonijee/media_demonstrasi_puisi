@@ -70,7 +70,7 @@ class _OlahNapasState extends State<OlahNapas> {
               height: 5,
             ),
             Text(
-              "Olah Napas dilakukan untuk memperoleh kualitas vokal dan penghayatan yang baik.",
+              "Olah napas dilakukan untuk memperoleh kualitas vokal dan penghayatan yang baik.",
               style: bodyContent,
             ),
             SizedBox(

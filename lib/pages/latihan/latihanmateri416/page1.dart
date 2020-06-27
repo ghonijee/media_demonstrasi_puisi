@@ -171,7 +171,7 @@ List grupSoal = [
     nomerSoal: 1,
     select: "",
     soal:
-        "Tahap menafsirkan makna puisi merupakan tahap... dalam langkah-langkah memusikalisasikan puisi....",
+        "Tahap menafsirkan makna puisi merupakan tahap... dalam langkah-langkah memusikalisasikan puisi.",
     answer: [
       Answer(value: "A", jawaban: "Pertama"),
       Answer(value: "B", jawaban: "Utama"),
@@ -184,7 +184,7 @@ List grupSoal = [
     nomerSoal: 2,
     select: "",
     soal:
-        "Deklamasi puisi adalah salah satu jenis pembacaan puisi yang menuntut pembaca untuk...guna mendalami penghayatan....",
+        "Deklamasi puisi adalah salah satu jenis pembacaan puisi yang menuntut pembaca untuk...guna mendalami penghayatan.",
     answer: [
       Answer(value: "A", jawaban: "Memikirkan puisi"),
       Answer(value: "B", jawaban: "Menghafal puisi"),
@@ -197,7 +197,7 @@ List grupSoal = [
     nomerSoal: 3,
     select: "",
     soal:
-        "Musikalisasi puisi merupakan salah satu jenis pembacaan puisi yang ditampilkan dengan memadukan...untuk memberikan penghayatan yang mendalam....",
+        "Musikalisasi puisi merupakan salah satu jenis pembacaan puisi yang ditampilkan dengan memadukan...untuk memberikan penghayatan yang mendalam.",
     answer: [
       Answer(value: "A", jawaban: "Instrumen dan vokal"),
       Answer(value: "B", jawaban: "Instrumen dan puisi"),

@@ -187,7 +187,7 @@ class MaknaPuisi extends StatelessWidget {
           height: 30,
         ),
         Text(
-          "Tuan memimpin pasukan di barisan depan \nBerani walau jumlah lawan seratus kali \nlebih banyak Dengan senjata seadanya \nDan hanya berbekal semangat yang tinggi.",
+          "Tuan memimpin pasukan di barisan depan \nBerani walau jumlah lawan seratus kali \nlebih banyak. Dengan senjata seadanya \nDan hanya berbekal semangat yang tinggi.",
           style: bodyContent,
         ),
         SizedBox(
@@ -201,7 +201,7 @@ class MaknaPuisi extends StatelessWidget {
           height: 30,
         ),
         Text(
-          "MAJU! \nMereka maju perang dengan semangat \nkemerdekaan tidak peduli siapa yang menikmati \nkemerdekaan itu Semangat itulah yang \ndiharapkan aku liris kembali \nmuncul pada generasi penerus",
+          "MAJU! \nMereka maju perang dengan semangat \nkemerdekaan tidak peduli siapa yang menikmati \nkemerdekaan itu. Semangat itulah yang \ndiharapkan aku liris kembali \nmuncul pada generasi penerus",
           style: bodyContent,
         ),
         SizedBox(

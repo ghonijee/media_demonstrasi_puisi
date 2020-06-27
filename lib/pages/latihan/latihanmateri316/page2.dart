@@ -187,7 +187,7 @@ List grupSoal = [
   Question(
     nomerSoal: 5,
     select: "",
-    soal: "Tema yang terdapat dalam puisi di atas adalah.....",
+    soal: "Tema yang terdapat dalam puisi di atas adalah....",
     answer: [
       Answer(value: "A", jawaban: "Perjuangan"),
       Answer(value: "B", jawaban: "Kepahlawanan"),

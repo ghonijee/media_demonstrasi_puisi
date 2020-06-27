@@ -98,6 +98,7 @@ class _LatihanState extends State<Latihan> {
               SizedBox(
                 height: 5,
               ),
+              MakeListText("Latihan Kelompok", DaftarPuisisKelompok()),
               MakeListText("Latihan Mandiri", Latihan416Page1()),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -113,7 +114,6 @@ class _LatihanState extends State<Latihan> {
                   ),
                 ],
               ),
-              MakeListText("Latihan Kelompok", DaftarPuisisKelompok()),
             ],
           ),
         ),

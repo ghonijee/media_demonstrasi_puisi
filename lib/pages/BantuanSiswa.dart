@@ -5,14 +5,12 @@ import 'package:media_puisi/pages/bantuan/tips.dart';
 import 'package:media_puisi/styles/constanta.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'BantuanSiswa.dart';
-
-class Bantuan extends StatefulWidget {
+class BantuanSiswa extends StatefulWidget {
   @override
-  _BantuanState createState() => _BantuanState();
+  _BantuanSiswaState createState() => _BantuanSiswaState();
 }
 
-class _BantuanState extends State<Bantuan> {
+class _BantuanSiswaState extends State<BantuanSiswa> {
   TextEditingController cariController = TextEditingController();
 
   @override
@@ -20,7 +18,8 @@ class _BantuanState extends State<Bantuan> {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
 
-    return SingleChildScrollView(
+    return Scaffold(
+        body: SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -63,13 +62,30 @@ class _BantuanState extends State<Bantuan> {
               ],
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: TextField(
+              controller: cariController,
+              autofocus: false,
+              textInputAction: TextInputAction.search,
+              onEditingComplete: _searchGoogle,
+              decoration: InputDecoration(
+                contentPadding: EdgeInsets.all(5),
+                suffix: IconButton(
+                  onPressed: _searchGoogle,
+                  icon: Icon(Icons.search),
+                ),
+                hintText: "Cari di sini...",
+              ),
+            ),
+          ),
           SizedBox(
             height: 15,
           ),
           GestureDetector(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (_) => BantuanSiswa()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => PetunjukPenggunaan()));
             },
             child: Container(
               height: 75,
@@ -79,7 +95,7 @@ class _BantuanState extends State<Bantuan> {
               child: Row(
                 children: <Widget>[
                   Icon(
-                    Icons.supervised_user_circle,
+                    Icons.format_list_numbered,
                     size: 35,
                     color: PrimaryColor,
                   ),
@@ -87,7 +103,7 @@ class _BantuanState extends State<Bantuan> {
                     width: 20,
                   ),
                   Text(
-                    "Petunjuk Siswa",
+                    "Petunjuk Penggunaan",
                     style: listMenuBantuan,
                   )
                 ],
@@ -99,7 +115,10 @@ class _BantuanState extends State<Bantuan> {
           ),
           GestureDetector(
             onTap: () {
-              _petunjukGuru();
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => TipsDeklamasiMusikalisasi()));
             },
             child: Container(
               height: 85,
@@ -109,7 +128,7 @@ class _BantuanState extends State<Bantuan> {
               child: Row(
                 children: <Widget>[
                   Icon(
-                    Icons.account_circle,
+                    Icons.queue_music,
                     size: 35,
                     color: PrimaryColor,
                   ),
@@ -117,7 +136,41 @@ class _BantuanState extends State<Bantuan> {
                     width: 20,
                   ),
                   Text(
-                    "Petunjuk Guru",
+                    "Tips Deklamasi & \nMusikalisasi Puisi",
+                    softWrap: true,
+                    style: listMenuBantuan,
+                  )
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => RambuAnalisisPuisiKelompok()));
+            },
+            child: Container(
+              height: 85,
+              width: 350,
+              color: secondWhite,
+              padding: EdgeInsets.symmetric(horizontal: 25),
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.warning,
+                    size: 35,
+                    color: PrimaryColor,
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    "Rambu Analisis Puisi",
                     softWrap: true,
                     style: listMenuBantuan,
                   )
@@ -127,16 +180,16 @@ class _BantuanState extends State<Bantuan> {
           ),
         ],
       ),
-    );
+    ));
   }
 
-  _petunjukGuru() async {
-    const url =
-        "https://drive.google.com/file/d/1_Zo-wTeYWDdqRwamdZx19oscdtqiR0Lp/view?usp=drivesdk";
-    if (await canLaunch(url)) {
-      await launch(url);
+  _searchGoogle() async {
+    const url = "https://google.com/search?q=";
+    String search = url + cariController.text;
+    if (await canLaunch(search)) {
+      await launch(search);
     } else {
-      throw "Tidak bisa membuka petunjuk guru";
+      throw "Tidak bisa melakukan pencarian";
     }
   }
 }
