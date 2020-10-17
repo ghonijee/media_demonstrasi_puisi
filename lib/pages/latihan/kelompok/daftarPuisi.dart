@@ -54,7 +54,7 @@ class DaftarPuisisKelompok extends StatelessWidget {
             MakeListPuisi("Hujan Bulan Juni – Sapardi Djoko damono",
                 "Lagu rindu - Kerispatih", KelompokPuisi1()),
             MakeListPuisi("Keranda - Joko Pinurbo",
-                "Hanya Rindu - Andmesh Kamaleng", KelompokPuisi2()),
+                "Iwan Fals - Ibu", KelompokPuisi2()),
             MakeListPuisi(
                 "Peringatan - Wiji Thukul",
                 "Darah Juang - Cover oleh: Wafi Alkhoeriah dan Divo",

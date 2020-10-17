@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:media_puisi/bloc/latihan316.dart';
 import 'package:media_puisi/pages/latihan/kelompok/daftarPuisi.dart';
-import 'package:media_puisi/pages/latihan/latihanmateri316/page1.dart';
+// import 'package:media_puisi/pages/latihan/latihanmateri316/page1.dart';
 import 'package:media_puisi/pages/latihan/latihanmateri416/page1.dart';
 import 'package:media_puisi/pages/latihan/model/nilaiLatihan.dart';
 import 'package:media_puisi/styles/constanta.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Latihan extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class Latihan extends StatefulWidget {
 
 class _LatihanState extends State<Latihan> {
   NilaiLatihan _getNilaiLatihan = NilaiLatihan();
-  int nilaiLatihan3;
+  // int nilaiLatihan3;
   int nilaiLatihan4;
 
   @override
@@ -73,21 +74,37 @@ class _LatihanState extends State<Latihan> {
               SizedBox(
                 height: 5,
               ),
-              MakeListText("Latihan Mandiri", Latihan316Page1()),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+              // MakeListText("Latihan Mandiri", Latihan316Page1()),
+              Column(
                 children: <Widget>[
-                  Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-                    child: Text(
-                      "Nilai : $nilaiLatihan3",
-                      style: bodyContent.copyWith(fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.right,
+                  Card(
+                    child: ListTile(
+                      title: Text(
+                        "Latihan Mandiri",
+                        style: bodyContent,
+                      ),
+                      trailing: Icon(Icons.arrow_forward),
+                      onTap: () {
+                        _latihan316();
+                      },
                     ),
                   ),
                 ],
               ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.end,
+              //   children: <Widget>[
+              //     Padding(
+              //       padding:
+              //           const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+              //       child: Text(
+              //         "Nilai : $nilaiLatihan3",
+              //         style: bodyContent.copyWith(fontWeight: FontWeight.bold),
+              //         textAlign: TextAlign.right,
+              //       ),
+              //     ),
+              //   ],
+              // ),
               SizedBox(
                 height: 15,
               ),
@@ -122,9 +139,19 @@ class _LatihanState extends State<Latihan> {
   }
 
   Future checkNilai() async {
-    nilaiLatihan3 = await _getNilaiLatihan.getNilai("latihan3");
+    // nilaiLatihan3 = await _getNilaiLatihan.getNilai("latihan3");
     nilaiLatihan4 = await _getNilaiLatihan.getNilai("latihan4");
     setState(() {});
+  }
+
+  _latihan316() async {
+    const url =
+        "https://forms.gle/kiRSF6hxP6LbuyBW7";
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw "Tidak bisa membuka latihan";
+    }
   }
 }
 
